@@ -17,6 +17,8 @@ echo "########################################################################"
 
 # Basic info
 HOSTNAME=`uname -n`
+KERNEL=`uname -r`
+ARCH=`uname -i`
 ROOT=`df -H | grep -vE '^Filesystem|tmpfs|cdrom' | awk '{ print $5 " " $1 }'`
 
 # System load
@@ -33,6 +35,8 @@ Last5=$(last -5 root)
 echo "
 ===============================================
  - Hostname....................: $HOSTNAME
+ - Kernel......................: $KERNEL
+ - Architecture................: $ARCH
  - Disk Space..................: $ROOT currently used
  - CPU usage...................: $LOAD1, $LOAD5, $LOAD15 (1, 5, 15 min)
  - Memory used.................: $MEMORY1 / $MEMORY2
