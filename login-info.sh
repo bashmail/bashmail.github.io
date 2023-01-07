@@ -20,6 +20,8 @@ HOSTNAME=`uname -n`
 KERNEL=`uname -r`
 ARCH=`uname -i`
 ROOT=`df -H | grep -vE '^Filesystem|tmpfs|cdrom' | awk '{ print $5 " " $1 }'`
+USER=`whoami | awk '{ print $1}'`
+PROCESSOR=`lscpu | grep 'Model name' | cut -f 2 -d ":" | awk '{$1=$1}1'`
 
 # System load
 MEMORY1=`free -t -m | grep Total | awk '{print $3" MB";}'`
@@ -30,18 +32,19 @@ LOAD15=`cat /proc/loadavg | awk {'print $3'}`
 
 #Login Information
 Failed=$((`lastb | wc -l` - 2)) ; > /var/log/btmp
-Last5=$(last -5 root)
+Last3=$(last -3 $USER)
 
 echo "
 ===============================================
+ - Processor...................: $PROCESSOR
  - Hostname....................: $HOSTNAME
  - Kernel......................: $KERNEL
  - Architecture................: $ARCH
  - Disk Space..................: $ROOT currently used
  - CPU usage...................: $LOAD1, $LOAD5, $LOAD15 (1, 5, 15 min)
- - Memory used.................: $MEMORY1 / $MEMORY2
+ - Memory used.................: "Used:" $MEMORY1 / "Total:" $MEMORY2
  - Failed logins ..............: $Failed ( since last successful login)
- - Last 5 successful Logins ...:
-$Last5
+ - Last 3 successful Logins ...:
+$Last3
 ===============================================
 "
