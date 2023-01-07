@@ -1,14 +1,19 @@
 #!/bin/bash
 
-echo "######################################################################"
-echo "#                                                                    #"
-echo "#                          Welcome Back                              #"
-echo "#                                                                    #"
-echo "#        (Server is setup, optimized & secured by BashMail)          #"
-echo "#              Email for queries: support@bashmail.net               #"
-echo "#                                                                    #"
-echo "######################################################################"
-
+echo "########################################################################"
+echo "#     _  __                      _____                                 #"
+echo "#    | |/ /____  ________  _____/ ___/___  ______   _____  __________  #"
+echo "#    |   // __ \/ ___/ _ \/ ___/\__ \/ _ \/ ___/ | / / _ \/ ___/ ___/  #"
+echo "#   /   |/ /_/ / /  /  __(__  )___/ /  __/ /   | |/ /  __/ /  (__  )   #"
+echo "#  /_/|_/ .___/_/   \___/____//____/\___/_/    |___/\___/_/  /____/    #"
+echo "#      /_/                                                             #"
+echo "#                                                                      #"
+echo "#                          Welcome Back                                #"
+echo "#                                                                      #"
+echo "#      (Server is setup, optimized & secured by XpresServers)          #"
+echo "#           Email for queries: support@xpresservers.com                #"
+echo "#                                                                      #"
+echo "########################################################################"
 
 # Basic info
 HOSTNAME=`uname -n`
