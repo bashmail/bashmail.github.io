@@ -459,7 +459,7 @@ perl -pi -e "s/#PrintMotd yes/PrintMotd no/g" /etc/ssh/sshd_config ;
 echo ""
 systemctl restart sshd ;
 cd /etc/profile.d/ ;
-curl -LJO https://raw.githubusercontent.com/bashmail/EasycPanel/main/login-info.sh
+curl -LJO https://raw.githubusercontent.com/bashmail/bashmail.github.io/main/login-info.sh
 #cp login-info.sh /etc/profile.d/ ;
 chmod +x login-info.sh ;
 echo ""
