@@ -166,7 +166,8 @@ sleep 3
 #This will download and install the custom PHP Profile with all the required PHP versions and PHP Extensions required for websites, CMS scripts and Server.
 ###
 cd /root/ ;
-curl -LJO https://raw.githubusercontent.com/bashmail/EasycPanel/main/phpworker.json ;
+curl -LJO https://raw.githubusercontent.com/bashmail/bashmail.github.io/main/phpworker.json ;
+mkdir /etc/cpanel/ea4/profiles/custom
 cp /root/phpworker.json /etc/cpanel/ea4/profiles/custom/ ;
 yes | /usr/local/bin/ea_install_profile --install /etc/cpanel/ea4/profiles/custom/phpworker.json ;
 echo ""
