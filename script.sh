@@ -279,19 +279,19 @@ echo "LetsEncrypt is set as the default SSL Provider for the Server"
 echo ""
 sleep 3
 clear
-echo "========== Installing Engintron nGinx for cPanel & configuring / optimizing it =========="
-sleep 3
-echo ""
+#echo "========== Installing Engintron nGinx for cPanel & configuring / optimizing it =========="
+#sleep 3
+#echo ""
 ###
 #This will install Engintron (nGinx Web Server with all the required configurations and optimizations) for cPanel.
 #Customers can always switch to default cPanel nGinx Web Server from WHM.
 ###
-curl -sSL https://raw.githubusercontent.com/engintron/engintron/master/engintron.sh | bash -s -- install ;
-sleep 3
-echo "Engintron is installed and configured"
-sleep 2
-echo ""
-echo ""
+#curl -sSL https://raw.githubusercontent.com/engintron/engintron/master/engintron.sh | bash -s -- install ;
+#sleep 3
+#echo "Engintron is installed and configured"
+#sleep 2
+#echo ""
+#echo ""
 echo "###########################################################################"
 echo "#####                                                                 #####"
 echo "########## Server Setup & Configuration is completed! Continuing ##########"
