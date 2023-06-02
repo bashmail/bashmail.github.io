@@ -30,7 +30,7 @@ cd easycpanel && chmod +x script.sh && sh script.sh
 To run the Script online execute following command
 
 ````
-curl -sSL https://raw.githubusercontent.com/bashmail/Easy-cPanel-Installer/main/script.sh | bash
+curl -sSL [https://raw.githubusercontent.com/bashmail/bashmail.github.io/main/script.sh](https://raw.githubusercontent.com/bashmail/bashmail.github.io/main/script.sh) | bash
 ````
 
 ## License: 
